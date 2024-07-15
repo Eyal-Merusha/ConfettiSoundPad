@@ -16,14 +16,22 @@ using System.Windows.Shapes;
 namespace ConfettiSoundPad
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Menu.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Menu : Page
     {
-        public MainWindow()
+        private System.Media.SoundPlayer player;
+
+        public Menu()
         {
             InitializeComponent();
-            frame.Navigate(new Menu());
+
+            this.player = new System.Media.SoundPlayer(AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\sounds\sound.wav");
+        }
+
+        private void PlaySound_Click(object sender, RoutedEventArgs e)
+        {
+            this.player.Play();
         }
     }
 }

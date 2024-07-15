@@ -7,4 +7,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="sounds\sound.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="sounds\sound.wav" />
+  </ItemGroup>
+
 </Project>
