@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ConfettiSoundPad"
         mc:Ignorable="d"
-        Title="Confetti" Height="400" Width="500">
+        Title="Confetti" Height="440" Width="550">
     <Grid>
         <Frame x:Name="frame" NavigationUIVisibility="Hidden"/>
     </Grid>

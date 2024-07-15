@@ -9,6 +9,7 @@
       Title="Menu">
 
     <Grid>
-        <Button Content="Play Sound" Height="20" Width="80" Click="PlaySound_Click"/>
+        <Button Content="Play Sound" Height="20" Width="100" Click="PlaySound_Click" Margin="200,180,200,200"/>
+        <Button x:Name="Record" Content="Start Recording" Height="20" Width="100" Background="LightGray" Click="RecordSound_Click" Margin="200,205,200,175" RenderTransformOrigin="0.512,2.15"/>
     </Grid>
 </Page>
