@@ -36,12 +36,19 @@ namespace ConfettiSoundPad
 
         private void PlaySound_Click(object sender, RoutedEventArgs e)
         {
-            if (audioFileReader == null)
+            try
             {
-                audioFileReader = new AudioFileReader(filePath);
-                waveOut.Init(audioFileReader);
+                if (audioFileReader == null)
+                {
+                    audioFileReader = new AudioFileReader(filePath);
+                    waveOut.Init(audioFileReader);
+                }
+                waveOut.Play();
             }
-            waveOut.Play();
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}");
+            }
         }
 
         private void RecordSound_Click(object sender, RoutedEventArgs e)
